@@ -12,7 +12,7 @@
     --color-primary-light: #ED7D31;
 
     --color-foreground: #0e0e0e;
-    --color-foreground-light: #9a9a9a;
+    --color-foreground-light: #464646;
     --color-foreground-lighter: #e0e0e0;
 
     --font-default: 'Source Sans Pro', sans-serif;
@@ -397,19 +397,22 @@ main {
     h2 {
         width: 100%;
         flex-basis: 100%;
-        text-align: center;
+        // text-align: center;
         text-transform: uppercase;
         font-weight: 400;
         font-size: var(--font-size-large);
-        margin-bottom: 10px;
+        margin: 0 10px 10px;
         font-weight: 600;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--color-foreground-light);
 
         a {
-            color: var(--color-primary);
+            color: var(--color-foreground);
             text-decoration: none;
 
             &:hover {
-                color: var(--color-primary-light);
+                color: var(--color-foreground-light);
+                border-bottom-color: (--color-foreground-lighter);
             }
         }
     }
