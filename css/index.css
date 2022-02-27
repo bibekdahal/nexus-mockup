@@ -363,7 +363,10 @@ main section {
   margin: 0 16px;
 }
 .activities p a:hover {
-  text-decoration: underline;
+  color: var(--color-foreground-light);
+}
+.activities p a i {
+  margin-left: 8px;
 }
 .activities .activity {
   position: relative;
