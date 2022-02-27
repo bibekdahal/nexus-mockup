@@ -242,10 +242,10 @@ main section {
 #inquiry form .form-field:not(.inline) {
   display: flex;
   flex-direction: column;
-  padding: 10px 16px;
+  padding: 6px 10px;
 }
 #inquiry form .form-field.inline {
-  padding: 32px 16px 10px;
+  padding: 32px 10px 10px;
 }
 #inquiry form input, #inquiry form select, #inquiry form textarea {
   padding: 4px 6px;
@@ -409,11 +409,48 @@ main section {
   transform: scale(1.05);
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-light);
+  padding: 24px 0;
+}
+.info > div {
+  margin: 4px 0;
+  color: #fff;
+}
+.info > div.icons {
+  display: flex;
+}
+.info > div p {
+  margin: 4px 0;
+  text-align: center;
+  font-size: var(--font-size);
+  font-weight: 600;
+}
+.info > div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: var(--font-size-normal);
+}
+.info > div a i {
+  font-size: var(--font-size-x-large);
+}
+.info > div a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 footer {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-top: 40px;
 }
 footer #footer-container {
   width: 100%;
