@@ -240,9 +240,13 @@ main {
         border: 1px solid var(--color-primary-light);
         border-radius: 16px;
 
-        display: flex;
+        display: none;
         flex-direction: row;
         flex-wrap: wrap;
+
+        &.active {
+            display: flex;
+        }
 
         .form-field {
             border: 0;
@@ -254,6 +258,7 @@ main {
                 font-size: var(--font-size-small);
                 padding: 4px 4px;
                 font-weight: 600;
+                height: calc(var(--font-size-small) + 8px)
             }
         }
 
@@ -278,10 +283,14 @@ main {
             flex-basis: 100%;
         }
 
-        .form-field {
+        .form-field:not(.inline) {
             display: flex;
             flex-direction: column;
             padding: 10px 16px;
+        }
+
+        .form-field.inline {
+            padding: 32px 16px 10px;
         }
 
         input, select, textarea {

@@ -14,6 +14,7 @@
     <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -141,12 +142,13 @@
 
         <section id="inquiry">
             <div class="tabs">
-                <button class="tab active">Tour Package</button>
-                <button class="tab">Car Rental</button>
-                <button class="tab">Flight Ticket</button>
-                <button class="tab">Bus Ticket</button>
+                <button class="tab active" data-tab="tour-inquiry">Tour Package</button>
+                <button class="tab" data-tab="car-rental">Car Rental</button>
+                <button class="tab" data-tab="flight-ticket">Flight Ticket</button>
+                <button class="tab" data-tab="bus-ticket">Bus Ticket</button>
             </div>
-            <form id="tour-inquiry">
+
+            <form id="tour-inquiry" class="active">
                 <div class="form-field col-3">
                     <label for="interest">Your Interests *</label>
                     <input name="interest" placeholder="e.g. Kathmandu Sightseeing" required>
@@ -171,6 +173,138 @@
                 <div class="form-field col-2">
                     <label for="date-to">To</label>
                     <input name="date-to" type="date">
+                </div>
+
+                <div class="form-field col-4">
+                    <label for="name">Name *</label>
+                    <input name="name" required>
+                </div>
+                <div class="form-field col-4">
+                    <label for="email">Email *</label>
+                    <input name="email" required>
+                </div>
+
+                
+                <div class="form-field col-8">
+                    <label for="comments">Personal message</label>
+                    <textarea name="comments"></textarea>
+                </div>
+
+                <button>Get a quote</button>
+            </form>
+
+            <form id="car-rental">
+                <div class="form-field col-3">
+                    <label for="from">From *</label>
+                    <input name="from" placeholder="e.g. Kathmandu" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-from" type="date">
+                </div>
+                <div class="form-field col-1 inline">
+                    <input name="roundtrip" type="checkbox">
+                    <label for="roundtrip">Roundtrip</label>
+                </div>
+                <div class="form-field col-3">
+                    <label for="to">To *</label>
+                    <input name="to" placeholder="e.g. Pokhara" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-to" type="date">
+                </div>
+                <div class="form-field col-1">
+                    <label for="people">Number of people</label>
+                    <input name="people" type="number">
+                </div>
+
+                <div class="form-field col-4">
+                    <label for="name">Name *</label>
+                    <input name="name" required>
+                </div>
+                <div class="form-field col-4">
+                    <label for="email">Email *</label>
+                    <input name="email" required>
+                </div>
+
+                
+                <div class="form-field col-8">
+                    <label for="comments">Personal message</label>
+                    <textarea name="comments"></textarea>
+                </div>
+
+                <button>Get a quote</button>
+            </form>
+
+            <form id="flight-ticket">
+                <div class="form-field col-3">
+                    <label for="from">From *</label>
+                    <input name="from" placeholder="e.g. Kathmandu" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-from" type="date">
+                </div>
+                <div class="form-field col-1 inline">
+                    <input name="roundtrip" type="checkbox">
+                    <label for="roundtrip">Roundtrip</label>
+                </div>
+                <div class="form-field col-3">
+                    <label for="to">To *</label>
+                    <input name="to" placeholder="e.g. Pokhara" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-to" type="date">
+                </div>
+                <div class="form-field col-1">
+                    <label for="people">Number of people</label>
+                    <input name="people" type="number">
+                </div>
+
+                <div class="form-field col-4">
+                    <label for="name">Name *</label>
+                    <input name="name" required>
+                </div>
+                <div class="form-field col-4">
+                    <label for="email">Email *</label>
+                    <input name="email" required>
+                </div>
+
+                
+                <div class="form-field col-8">
+                    <label for="comments">Personal message</label>
+                    <textarea name="comments"></textarea>
+                </div>
+
+                <button>Get a quote</button>
+            </form>
+
+            <form id="bus-ticket">
+                <div class="form-field col-3">
+                    <label for="from">From *</label>
+                    <input name="from" placeholder="e.g. Kathmandu" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-from" type="date">
+                </div>
+                <div class="form-field col-1 inline">
+                    <input name="roundtrip" type="checkbox">
+                    <label for="roundtrip">Roundtrip</label>
+                </div>
+                <div class="form-field col-3">
+                    <label for="to">To *</label>
+                    <input name="to" placeholder="e.g. Pokhara" required>
+                </div>
+                <div class="form-field col-3">
+                    <label></label>
+                    <input name="date-to" type="date">
+                </div>
+                <div class="form-field col-1">
+                    <label for="people">Number of people</label>
+                    <input name="people" type="number">
                 </div>
 
                 <div class="form-field col-4">
